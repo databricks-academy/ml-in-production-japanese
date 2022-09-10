@@ -7,7 +7,7 @@
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="0bcc02e5-87e7-4dd9-8973-84babb1f8652"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -27,7 +27,7 @@
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="f567a231-9c54-4417-8c26-a2079e38d4a5"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 機械学習のライフサイクルを通して...<br>
@@ -45,7 +45,7 @@
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="8379bb78-bbb6-48c4-910b-37ce5b17030b"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -70,7 +70,7 @@
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="4f094143-9696-4f76-8368-e249b0ff22c6"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -78,7 +78,7 @@
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="5b6379eb-3ea4-41c3-b320-158c98cb75ef"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -86,7 +86,7 @@
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="924c3ca2-26cd-4a67-98f3-3976f61165d6"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -103,7 +103,7 @@ X_train.head()
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="eaf7bc15-c588-4fd1-bd8e-534c31a2192b"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -113,7 +113,7 @@ X_train.head()
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="18498d46-c500-4939-95c8-f17df6f913ca"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -151,7 +151,7 @@ with mlflow.start_run(run_name="Basic RF Run") as run:
 
 # COMMAND ----------
 
-# MAGIC %md-sandbox
+# MAGIC %md-sandbox <i18n value="5350e1fc-0670-4e81-b747-524ca465bae7"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -166,7 +166,7 @@ with mlflow.start_run(run_name="Basic RF Run") as run:
 
 # COMMAND ----------
 
-# MAGIC %md-sandbox
+# MAGIC %md-sandbox <i18n value="18464172-8be4-4c26-85c7-3d9674253f98"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -180,7 +180,7 @@ with mlflow.start_run(run_name="Basic RF Run") as run:
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="7c2e26f3-1fb1-4208-bbdd-a9127dd4619c"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -236,7 +236,7 @@ def log_rf(experiment_id, run_name, params, X_train, X_test, y_train, y_test):
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="8a40693f-5a0f-4a2f-90ed-660fa0a46ad5"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -254,7 +254,7 @@ log_rf(experiment_id, "Second Run", params, X_train, X_test, y_train, y_test)
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="e54b78e2-f3a2-4ce4-ba44-dd466c1e2f6a"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -274,7 +274,7 @@ log_rf(experiment_id, "Third Run", params_1000_trees, X_train, X_test, y_train, 
 
 # COMMAND ----------
 
-# MAGIC %md-sandbox
+# MAGIC %md-sandbox <i18n value="0da95562-a3c3-406c-9142-ea6045b19d6b"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -292,7 +292,7 @@ client = MlflowClient()
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="4e9d2c32-cbe0-4536-8aaa-3ad8611f2b03"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -304,7 +304,7 @@ display(client.list_run_infos(experiment_id))
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="354881c3-880b-4315-a3e7-f2c84bc812a9"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -317,7 +317,7 @@ display(runs)
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="dc942bf8-e27f-45e3-8c28-cef25862046d"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -331,7 +331,7 @@ client.list_artifacts(run_rf.run_id)
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="1c34346a-8431-44da-9eae-ea2acebb6a9b"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -343,7 +343,7 @@ client.get_run(run_rf.run_id).data.metrics
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="6476766c-5cc4-44c9-91c9-0a2304e50457"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -356,7 +356,7 @@ model.feature_importances_
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="6d9be940-9705-4f7a-b453-a29df8a62cad"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -379,7 +379,7 @@ model.feature_importances_
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="b9bcc0d6-110a-456a-a950-a7404782cf7f"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -389,7 +389,7 @@ model.feature_importances_
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="2fc3311c-4fc1-43ec-a673-b5842f1f05f3"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 

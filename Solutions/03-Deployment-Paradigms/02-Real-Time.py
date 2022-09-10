@@ -7,7 +7,7 @@
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="5e632009-09f2-491e-89c3-565320d463c8"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -30,7 +30,7 @@
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="e8d91a25-55ce-47ee-a353-c53ae793e917"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -52,7 +52,7 @@
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="76d7a403-2d43-425f-ba56-b45e3c1667a4"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -83,7 +83,7 @@
 
 # COMMAND ----------
 
-# MAGIC %md-sandbox
+# MAGIC %md-sandbox <i18n value="94daca86-99a3-4ba1-81d2-7978ef10b940"/>
 # MAGIC 
 # MAGIC 
 # MAGIC ## MLflowを使ったプロトタイピング（Prototyping with MLflow）
@@ -113,7 +113,7 @@ with mlflow.start_run() as run:
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="f1474008-3f65-4d83-829b-802344f0450b"/>
 # MAGIC 
 # MAGIC テスト用に開発用サーバーにリクエストを送るには、いくつかの方法があります。
 # MAGIC * **`click`** ライブラリを使用します。
@@ -127,7 +127,7 @@ with mlflow.start_run() as run:
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="cbe5b173-2e3c-4297-b3b9-0ce3955d1f75"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -163,7 +163,7 @@ print(p)                       # Print it's status, make sure it's runnning
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="07ba25b5-7a4b-4215-b084-e0e0549da8bb"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -180,7 +180,7 @@ input_json
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="ba22cdd2-2b75-4c5d-9e11-45d89b865dbd"/>
 # MAGIC 
 # MAGIC 
 # MAGIC エンドポイントに対してPOSTリクエストを実行します。
@@ -206,7 +206,7 @@ print(f"Value:  {response.text}")
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="fc8c9431-22b7-4d0d-adae-986db149f3df"/>
 # MAGIC 
 # MAGIC 
 # MAGIC bash上で同じことをします。
@@ -217,7 +217,7 @@ print(f"Value:  {response.text}")
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="f2903c45-3615-41c4-97c3-9d402399f04f"/>
 # MAGIC 
 # MAGIC 
 # MAGIC バックグランドプロセスをクリーンアップします。
@@ -228,7 +228,7 @@ p.terminate()
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="63f1e88a-69d1-4ee4-8ecb-b760a4d11168"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -241,7 +241,7 @@ p.terminate()
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="af365e9e-4c75-43b1-9fe7-2aa1fc8b7343"/>
 # MAGIC 
 # MAGIC 
 # MAGIC モデルをトレーニングします。
@@ -278,7 +278,7 @@ with mlflow.start_run(run_name="RF Model") as run:
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="eb94b91f-df88-4483-8321-75a319841713"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -295,7 +295,7 @@ model_version_1 = mlflow.pyfunc.load_model(model_version_uri)
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="ac061551-c8bc-4f4e-b811-6ddb970ab1b6"/>
 # MAGIC 
 # MAGIC 
 # MAGIC ここで、モデルをサービングを有効にするために、MLflow Model Registry　にアクセスします。
@@ -304,19 +304,20 @@ model_version_1 = mlflow.pyfunc.load_model(model_version_uri)
 
 # COMMAND ----------
 
+import mlflow 
 # We need both a token for the API, which we can get from the notebook.
 token = dbutils.notebook.entry_point.getDbutils().notebook().getContext().apiToken().getOrElse(None)
 
 # With the token, we can create our authorization header for our subsequent REST calls
 headers = {"Authorization": f"Bearer {token}"}
 
-# Next we need an enpoint at which to execute our request which we can get from the Notebook's context
-api_url = dbutils.notebook.entry_point.getDbutils().notebook().getContext().apiUrl().getOrElse(None)
+# Next we need an endpoint at which to execute our request which we can get from the Notebook's context
+api_url = mlflow.utils.databricks_utils.get_webapp_url()
 print(api_url)
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="5e89ca75-0717-49f9-83fa-e0b1f18b89f7"/>
 # MAGIC 
 # MAGIC 
 # MAGIC エンドポイントを有効にします。
@@ -332,7 +333,7 @@ assert r.status_code == 200, f"Expected an HTTP 200 response, received {r.status
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="5890c1e6-9b36-4284-9ac2-3945c1c19886"/>
 # MAGIC 
 # MAGIC エンドポイントとモデルの準備が整うまでに数分かかります。
 # MAGIC 
@@ -368,7 +369,7 @@ def wait_for_version():
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="b388aa18-533a-47e0-8a60-0c972c65b421"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -398,7 +399,7 @@ def score_model(dataset: pd.DataFrame, timeout_sec=300):
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="7990376e-fbfb-4413-92d4-76bc6260f9e2"/>
 # MAGIC 
 # MAGIC 
 # MAGIC model serving clusterが **`ready`** 状態になったら、REST エンドポイントにリクエストを送ることができるようになります。
@@ -418,7 +419,7 @@ score_model(X_test)
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="10a3d7cc-2659-444b-a75c-eff0298fbb7c"/>
 # MAGIC 
 # MAGIC 
 # MAGIC また、オプションとして、<a href="https://www.mlflow.org/docs/latest/model-registry.html#transitioning-an-mlflow-models-stage" target="_blank">MLflow Model Registry</a> を使用して、モデルを **`Staging`** または **`Production`** ステージに遷移させることも可能です。
@@ -435,7 +436,7 @@ score_model(X_test)
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="2cfbc2cf-737c-47fa-af47-8a4144e5a9ba"/>
 # MAGIC 
 # MAGIC 
 # MAGIC <img src="https://files.training.databricks.com/images/icon_warn_24.png"/> **予期せぬコストが発生しないよう、Model Serving Clusterをシャットダウンすることを忘れないでください**。自動的に終了することはありません **`Status`** の横にある **`Stop`** をクリックして、Model Serving Clusterを停止してください。
@@ -445,7 +446,7 @@ score_model(X_test)
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="866cc57f-6fad-4198-8836-02b814eec32e"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -453,7 +454,7 @@ score_model(X_test)
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="dcd4faa4-aecc-4c49-858c-e9ef037a8758"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -498,7 +499,7 @@ score_model(X_test)
 
 # COMMAND ----------
 
-# MAGIC %md-sandbox
+# MAGIC %md-sandbox <i18n value="504bb995-6f89-43cd-8318-fdb3c5eb920c"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -516,7 +517,7 @@ score_model(X_test)
 
 # COMMAND ----------
 
-# MAGIC %md-sandbox
+# MAGIC %md-sandbox <i18n value="0daf8c28-b9f5-4879-b821-415556648e12"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -599,7 +600,7 @@ score_model(X_test)
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="03005f88-5bf3-4876-9446-d00bb1c86793"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -615,7 +616,7 @@ score_model(X_test)
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="75a2124d-f7c7-4f5b-9990-90e4d2dcf40e"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -625,7 +626,7 @@ score_model(X_test)
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="e3aceb7f-9a4e-44cc-83b9-84d363e17df5"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 

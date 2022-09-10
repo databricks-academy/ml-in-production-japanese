@@ -7,7 +7,7 @@
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="b2e4d4a1-8ca9-47ab-96e3-9410efcc06bf"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -26,7 +26,7 @@
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="da43d2f6-5942-42f1-8609-bff49f75e731"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -36,7 +36,7 @@
 
 # COMMAND ----------
 
-# MAGIC %md-sandbox
+# MAGIC %md-sandbox <i18n value="fa7a0aaf-1961-4ee2-8e27-c14c3273bb5c"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -57,7 +57,7 @@
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="6ca36c20-4834-4937-ab13-8341d57072d5"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -73,7 +73,7 @@
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="c3fa5caf-f8d9-4c80-a968-ac77890ff350"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -87,7 +87,7 @@
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="44a94be8-76e4-412a-93c9-c8952e6452cb"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -102,7 +102,7 @@
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="0fbd6359-a2d1-475b-a3c3-d3499381fdc5"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -122,7 +122,7 @@ X_train["longitude"] = X_train["longitude"].astype(str)
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="6444cf76-3e69-425b-83b8-ab142b369ff1"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -194,7 +194,7 @@ rf_model.fit(X_train_processed, y_train)
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="0cf00c97-cddf-443b-ae8d-6904321f8419"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -281,7 +281,7 @@ class RFWithPreprocess(mlflow.pyfunc.PythonModel):
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="da0c0242-f118-45c7-833e-f966a4aaf444"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -318,7 +318,7 @@ artifacts = {"config_path": config_path}
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="85fcf330-3682-4b37-857f-62be6e3be8d6"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -336,7 +336,7 @@ model.config
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="16a5af05-d070-4e89-b8ca-0723028a3f10"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -348,7 +348,7 @@ model.fit(X_train, y_train)
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="a19ea1a0-6124-43a1-9e0f-ee6285ac5fa9"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -361,7 +361,7 @@ predictions
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="5179a25e-3721-4dfb-8370-24bb64e6c5f5"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -376,7 +376,7 @@ signature
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="14a270e5-5546-43fd-a6af-1935a9a17e95"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -403,7 +403,7 @@ conda_env
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="553324ea-2794-4aaa-b579-2b34b82e7903"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -423,7 +423,7 @@ with mlflow.start_run() as run:
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="4d9b9658-8fc5-44b2-81f1-ce5702ada9dd"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -436,7 +436,7 @@ loaded_preprocess_model = mlflow.pyfunc.load_model(mlflow_pyfunc_model_path)
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="f3485479-06db-4403-bc76-94b02a959a6b"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -448,7 +448,7 @@ loaded_preprocess_model.predict(X_test)
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="aaf95902-f125-4010-a470-8f7685cdab46"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -456,7 +456,7 @@ loaded_preprocess_model.predict(X_test)
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="90861e97-9a02-45e0-9f5c-3ec82f338462"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -472,7 +472,7 @@ loaded_preprocess_model.predict(X_test)
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="42441b4e-8552-4b8d-8166-5a4c819184ba"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -482,7 +482,7 @@ loaded_preprocess_model.predict(X_test)
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="0e65e9fe-f6a7-47f4-b0c3-693459867164"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 

@@ -7,7 +7,7 @@
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="b8f7f476-820c-470b-b998-ee49d8090103"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -28,7 +28,7 @@
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="c69d373e-764d-4d90-89af-cd7ec988e8ce"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -52,7 +52,7 @@
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="25510128-3adc-46f2-a87a-fd25250917b0"/>
 # MAGIC 
 # MAGIC モデルの精度を担保するためには、他にもいくつかの考慮事項があります。<br><br>
 # MAGIC 
@@ -65,7 +65,7 @@
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="a6956622-b714-4906-b513-6c84e79399b8"/>
 # MAGIC 
 # MAGIC ### Sparkにおける推論(Inference in Spark)
 # MAGIC 
@@ -75,7 +75,7 @@
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="a2a01839-d58e-480c-a827-a6fd16718b28"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -95,7 +95,7 @@ y = df["price"]
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="3110b46a-f08d-437b-a54b-99891bf3095a"/>
 # MAGIC 
 # MAGIC 
 # MAGIC トレーニングとモデルのロギング（Train and log model）
@@ -118,7 +118,7 @@ with mlflow.start_run(run_name="Final RF Model") as run:
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="4c5710a9-3cc1-49b6-81eb-9acf386afbad"/>
 # MAGIC 
 # MAGIC 
 # MAGIC PandasデータフレームからSparkデータフレームの作成
@@ -130,7 +130,7 @@ display(spark_df)
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="0c892310-6d74-44df-a42e-cfea83296be4"/>
 # MAGIC 
 # MAGIC 
 # MAGIC MLflowは簡単にSpark user defined function(UDF)を生成します。
@@ -142,7 +142,7 @@ predict = mlflow.pyfunc.spark_udf(spark, f"runs:/{run.info.run_id}/random_forest
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="edd6acae-9489-47c7-9d46-8a730ed48c3c"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 関数の入力として列名を使って、標準的なUDFとしてモデルを適用します。
@@ -155,7 +155,7 @@ display(prediction_df)
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="1fa8ab51-0dc8-433c-92e2-ae76e661e060"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -177,7 +177,7 @@ display(prediction_df)
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="5632d9fc-878e-4253-9911-505eb2ea8e2e"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 近い範囲で、パーティション（Partition）を設定しましょう。
@@ -191,7 +191,7 @@ prediction_df.write.partitionBy("neighbourhood_cleansed").mode("OVERWRITE").form
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="daa95012-b4cb-4c40-8931-cf328b7b3e3d"/>
 # MAGIC 
 # MAGIC 
 # MAGIC ファイルを見てみましょう。
@@ -203,7 +203,7 @@ display(dbutils.fs.ls(delta_partitioned_path))
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="f3232c00-22de-4b36-97d6-1c3c76b30121"/>
 # MAGIC 
 # MAGIC 
 # MAGIC Z-Orderingは、多次元クラスタリングの一種で、関連する情報を同じファイル群に配置するものです。 読み込む必要のあるデータ量を減らすことができます。 
@@ -215,7 +215,7 @@ spark.sql(f"OPTIMIZE delta.`{delta_partitioned_path}` ZORDER BY (zipcode)")
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="f13dcb97-e937-4953-8753-ae6e79d50f43"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -223,7 +223,7 @@ spark.sql(f"OPTIMIZE delta.`{delta_partitioned_path}` ZORDER BY (zipcode)")
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="661ad1cf-1389-4903-9d5c-68257d80637c"/>
 # MAGIC 
 # MAGIC 
 # MAGIC Feature tableの作成
@@ -255,7 +255,7 @@ inference_df = df.select("index", "price")
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="b3bbf60b-d884-4e1e-8cdb-a9de86fa2353"/>
 # MAGIC 
 # MAGIC 一意のテーブル名を付与します。
 # MAGIC 
@@ -280,7 +280,7 @@ fs.create_table(
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="6ad326c5-036f-4c5e-950a-5ade154cc398"/>
 # MAGIC 
 # MAGIC 
 # MAGIC Feature storeから、 **`fs.create_training_set`**　を使ってトレーニングセットを作成します。
@@ -297,7 +297,7 @@ training_set = fs.create_training_set(inference_df, feature_lookups, label="pric
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="1cb7cc5b-83cb-4a83-9bc6-027730a7fbfc"/>
 # MAGIC 
 # MAGIC 
 # MAGIC Feature storeでのpackaged modelを記録します。
@@ -326,7 +326,7 @@ fs.log_model(
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="79acd949-a75b-4b50-962f-49f612e56ce3"/>
 # MAGIC 
 # MAGIC 
 # MAGIC ここで、Model Registry UI上でモデルを表示します。
@@ -343,7 +343,7 @@ fs.log_model(
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="17e87bbe-1fff-4c46-8dcd-b358ad936dd8"/>
 # MAGIC 
 # MAGIC 
 # MAGIC Feature store modelによるバッチ・スコア（Batch score）を行います。
@@ -358,7 +358,7 @@ display(with_predictions)
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="82dd28bc-1943-4273-b01d-c7293c6aa60c"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -375,7 +375,7 @@ display(with_predictions)
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="9a23fac7-e622-4c09-a389-b74c95f7efaf"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -385,7 +385,7 @@ display(with_predictions)
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="203cc214-4db6-4796-977e-eaf2bf16f33f"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 

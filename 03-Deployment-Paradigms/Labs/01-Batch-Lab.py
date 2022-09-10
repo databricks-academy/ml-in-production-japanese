@@ -7,7 +7,7 @@
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="83ffb2a6-b450-4c59-91ed-76ab4d972ae2"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -35,7 +35,7 @@ df = (spark
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="4bceb653-c1e7-44c5-acb4-0cce746fbad2"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -85,7 +85,7 @@ model_details = mlflow.register_model(model_uri=model_uri, name=model_name)
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="922f29ae-e6a6-4e8a-8793-acbddfb2e22e"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -108,7 +108,7 @@ display(prediction_df)
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="ef89080b-4557-4b95-8e0a-1aa6b53e8e8b"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 

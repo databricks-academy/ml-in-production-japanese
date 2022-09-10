@@ -7,7 +7,7 @@
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="2b9aa913-4058-48fd-9d2a-cf99c3171893"/>
 # MAGIC 
 # MAGIC 
 # MAGIC # Lab: 後処理ロジックの追加 (Lab: Adding Post-Processing Logic)
@@ -22,7 +22,7 @@
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="9afdeb4a-5436-4775-b091-c20451ab9229"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -39,7 +39,7 @@ X_train.head()
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="b0f36204-cc7e-4bdd-a856-e8e78ba4673c"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -56,7 +56,7 @@ rf_model.fit(X_train, y_train)
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="17863f12-50a2-42d5-bb2f-47d7e647ab2e"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -91,7 +91,7 @@ class RFWithPostprocess(mlflow.pyfunc.PythonModel):
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="25109107-4520-4146-9435-6841fd514c16"/>
 # MAGIC 
 # MAGIC 
 # MAGIC モデルを作成して保存し、 **`X_test`** に適用します。
@@ -114,7 +114,7 @@ loaded_postprocess_model.predict(X_test)
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="19dc2c17-fe8c-4229-9d5d-8808c64a30b2"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 

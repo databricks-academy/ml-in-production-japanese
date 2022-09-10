@@ -7,7 +7,7 @@
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="c83d51d6-428b-4691-82ea-778976cde46b"/>
 # MAGIC 
 # MAGIC # Project Information
 # MAGIC 
@@ -17,7 +17,7 @@
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="0de6d320-330c-4889-95b5-78d478a65d55"/>
 # MAGIC 
 # MAGIC 次のセルを実行してこのコースのデータセットとそれらの著作権を確認できます。
 

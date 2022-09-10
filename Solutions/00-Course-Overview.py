@@ -7,7 +7,7 @@
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="c83d51d6-428b-4691-82ea-778976cde46b"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -60,7 +60,7 @@
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="35c71f4c-1ab2-4d02-a07f-c144d7fe7dfa"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -74,7 +74,7 @@
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="1464bb0e-c32c-4d92-b8a8-7d2e7767205f"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 

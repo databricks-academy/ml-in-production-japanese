@@ -7,7 +7,7 @@
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="8ce98e48-d7f7-430d-ace6-a69a610a1eb6"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -24,7 +24,7 @@
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="39a1bcda-628a-4751-b34c-59c375fffdef"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -42,7 +42,7 @@ X_train, X_test, y_train, y_test = train_test_split(df.drop(["price"], axis=1), 
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="103dd475-d82f-4966-9efc-ae45d27125ae"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -73,7 +73,7 @@ for p in parameters:
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="5de38ed5-17a5-421c-8ad1-893be59b062f"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -104,7 +104,7 @@ with mlflow.start_run(run_name= FILL_IN) as run:
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="ac401810-3cb2-4f6b-8d41-5a723769fe41"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -119,7 +119,7 @@ model = < FILL_IN >
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="0350f335-9b0d-4e5c-a8bd-41865144ff43"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -131,7 +131,7 @@ model = < FILL_IN >
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="2c011665-8444-441c-b830-e0e74886684f"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 

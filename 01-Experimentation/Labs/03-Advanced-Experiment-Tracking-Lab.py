@@ -7,7 +7,7 @@
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="d4db55e1-8962-4f27-b122-eeedd7089ae7"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -23,7 +23,7 @@
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="b0833c9c-68a1-4193-9740-2f4e02d299a5"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -110,7 +110,7 @@ with mlflow.start_run(run_name="parent") as run:
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="ef7fafd4-ac6f-4e20-8ae0-e427e372ce92"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 

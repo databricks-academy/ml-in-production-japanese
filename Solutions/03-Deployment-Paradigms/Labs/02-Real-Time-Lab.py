@@ -7,7 +7,7 @@
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="54771b4e-fe73-4edb-8d87-9d9d4c2d7170"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -26,7 +26,7 @@
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="ad24ef8d-031e-435c-a1e0-e64de81b936d"/>
 # MAGIC 
 # MAGIC 
 # MAGIC まず始めに、データをロードし、モデルを構築し、そのモデルを登録しましょう。
@@ -76,7 +76,7 @@ model_version = model_details.version
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="e3d6be06-1cc5-4ca6-9d81-ec237bba01bc"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -93,7 +93,7 @@ client.transition_model_version_stage(
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="ad504f00-8d56-4ab4-aa94-6172107a1934"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -108,7 +108,7 @@ client.transition_model_version_stage(
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="44b586ec-ac4f-4a71-9c27-cc6ac5111ec8"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -120,18 +120,20 @@ client.transition_model_version_stage(
 
 # COMMAND ----------
 
+import mlflow
+
 # We need both a token for the API, which we can get from the notebook.
 token = dbutils.notebook.entry_point.getDbutils().notebook().getContext().apiToken().getOrElse(None)
 # With the token, we can create our authorization header for our subsequent REST calls
 headers = {"Authorization": f"Bearer {token}"}
 
-# Next we need an enpoint at which to execute our request which we can get from the Notebook's context
-api_url = dbutils.notebook.entry_point.getDbutils().notebook().getContext().apiUrl().getOrElse(None)
+# Next we need an endpoint at which to execute our request which we can get from the Notebook's context
+api_url = mlflow.utils.databricks_utils.get_webapp_url()
 print(api_url)
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="cd88b865-b030-48f1-83f5-0f2f872cc757"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -148,7 +150,7 @@ assert r.status_code == 200, f"Expected an HTTP 200 response, received {r.status
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="3b7cf885-1789-49ac-be65-f61a9f8752d5"/>
 # MAGIC 
 # MAGIC 先に進む前にリソースの準備が整っていることを確認するために、2 つの待機メソッドを再定義できます。
 
@@ -181,7 +183,7 @@ def wait_for_version():
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="2e33d989-988d-4673-853f-c7e0e568b3f9"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 次に、1つのレコードを入力として受け取り、エンドポイントから予測値を返す関数を作成します。
@@ -202,7 +204,7 @@ def score_model(dataset: pd.DataFrame, model_name: str, token: str, api_url: str
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="ae8b57cb-67fe-4d36-91c2-ce4ec405e38e"/>
 # MAGIC 
 # MAGIC さて、Pandas DataFrameの1行をスコアリングする関数を使ってみましょう。
 # MAGIC 

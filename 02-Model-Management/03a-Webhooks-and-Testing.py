@@ -7,7 +7,7 @@
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="8a133a94-0841-46ab-ad14-c85a27948a3c"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -23,7 +23,7 @@
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="1889b8f8-0c82-4057-892b-fe894ba35f18"/>
 # MAGIC 
 # MAGIC 
 # MAGIC ## 自動テスト (Automated Testing)
@@ -51,7 +51,7 @@
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="35f9b2a0-9429-4922-b14d-cccceb711222"/>
 # MAGIC 
 # MAGIC 
 # MAGIC ## モデルとJobを作成する (Create a Model and Job)
@@ -65,7 +65,7 @@
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="bae3f327-645e-48fb-b920-a87d2a5cda23"/>
 # MAGIC 
 # MAGIC ### ユーザー・アクセス　トークンを作成する (Create a user access token)
 # MAGIC 
@@ -95,14 +95,16 @@ token = "<insert your token here>"
 
 # COMMAND ----------
 
+import mlflow
+
 # With the token, we can create our authorization header for our subsequent REST calls
 headers = {"Authorization": f"Bearer {token}"}
 
-instance = dbutils.notebook.entry_point.getDbutils().notebook().getContext().apiUrl().getOrElse(None)
+instance = mlflow.utils.databricks_utils.get_webapp_url()
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="086b4385-9eae-492e-8ccd-52d68a97ad86"/>
 # MAGIC 
 # MAGIC 
 # MAGIC ### モデルのトレーニングと登録 (Train and Register a Model)
@@ -136,7 +138,7 @@ with mlflow.start_run(run_name="Webhook RF Experiment") as run:
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="8f56343e-2a5f-4515-be64-047b07dcf877"/>
 # MAGIC 
 # MAGIC 
 # MAGIC モデルを登録します。
@@ -153,7 +155,7 @@ model_details = mlflow.register_model(model_uri=model_uri, name=name)
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="02c615b7-dbf6-4e4a-8706-6c31cac2be68"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -163,7 +165,7 @@ model_details = mlflow.register_model(model_uri=model_uri, name=name)
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="b22313af-97a9-43d8-aaf6-57755b3d45da"/>
 # MAGIC 
 # MAGIC このノートブックと同じフォルダにノートブック **`03B-Webhooks-JOB-Demo`** を実行するJobを作成します。<br><br>
 # MAGIC 
@@ -189,7 +191,7 @@ model_details = mlflow.register_model(model_uri=model_uri, name=name)
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="66dd2af1-92c3-406c-8fea-4d755700cd73"/>
 # MAGIC 
 # MAGIC 
 # MAGIC あるいは、以下のコードはプログラムによってJobを作成します。
@@ -257,7 +259,7 @@ def get_webhook_job(instance, headers, job_name, cluster_id, notebook_path):
     job_id = res.json().get("job_id", job_id)
     return job_id
 
-notebook_path = dbutils.notebook.entry_point.getDbutils().notebook().getContext().notebookPath().get().replace("03a-Webhooks-and-Testing", "03b-Webhooks-Job-Demo")
+notebook_path = mlflow.utils.databricks_utils.get_notebook_path().replace("03a-Webhooks-and-Testing", "03b-Webhooks-Job-Demo")
 
 # We can use our utility method for creating a unique 
 # database name to help us construct a unique job name.
@@ -276,7 +278,7 @@ print(f"Job name: {job_name}")
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="15eeee0f-9472-4b7b-94b9-e728a7c9c38d"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -286,7 +288,7 @@ print(f"Job name: {job_name}")
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="8c0aa70d-ab84-4e31-9ee4-2ab5d9fa6beb"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -322,7 +324,7 @@ assert response.status_code == 200, f"Expected HTTP 200, received {response.stat
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="965cfc78-c346-40d2-a328-d3d769a8c3e2"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -330,7 +332,7 @@ assert response.status_code == 200, f"Expected HTTP 200, received {response.stat
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="dc8d88f1-f954-4cbf-86cd-4e4c13c198db"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -351,7 +353,7 @@ print(json.dumps(response.json(), indent=4))
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="70e6903f-0d4e-423d-b4f8-aea6efd28ba5"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 最後に、Webhook IDをcurlまたは pythonリクエストにコピーし、Webhookを削除します。Webhookが削除されたことを確認するには、LISTリクエストを使用します。
@@ -378,7 +380,7 @@ print(json.dumps(response.json(), indent=4))
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="c02662e2-e03f-478a-a24a-d0e2961a29ef"/>
 # MAGIC 
 # MAGIC 
 # MAGIC ## HTTP Webhookの作成 (Create a HTTP webhook)
@@ -420,7 +422,7 @@ print(json.dumps(response.json(), indent=4))
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="17f881f6-0404-4348-b6e3-1aa11b383343"/>
 # MAGIC 
 # MAGIC Webhook を登録したので、**エクスペリメントUI上のステージ `None` から `Staging` にモデルを移行することでWebhookをテストできます。** 関連付けられたSlackチャネルに受信メッセージが表示されるはずです。
 # MAGIC 
@@ -429,7 +431,7 @@ print(json.dumps(response.json(), indent=4))
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="d9dbc19c-7c1d-4cae-a198-5c6266acf825"/>
 # MAGIC 
 # MAGIC 
 # MAGIC ## リソース (Resources)

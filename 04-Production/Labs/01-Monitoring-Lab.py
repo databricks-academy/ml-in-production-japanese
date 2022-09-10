@@ -11,7 +11,7 @@
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="90df02e3-24c6-4bc6-99db-31417257255f"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -38,7 +38,7 @@
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="41653424-6d5b-4214-b16f-bf5c6fe8e284"/>
 # MAGIC 
 # MAGIC 
 # MAGIC それでは、最初の時間帯のアイスクリームのデータフレームを見てみましょう。
@@ -49,7 +49,7 @@ df1.head()
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="e608da11-41af-42db-a6ef-95e26e17e530"/>
 # MAGIC 
 # MAGIC このデータセットから、シミュレーションのドリフトの形を特定してみてください。データセットは以下のように変更されています。
 # MAGIC 
@@ -65,7 +65,7 @@ df1.head()
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="132cbccb-ebd5-40fa-b0a0-f0c829fe2779"/>
 # MAGIC 
 # MAGIC 
 # MAGIC それでは、2つ目の時間帯のアイスクリームのDataFrameを見てみましょう。
@@ -76,7 +76,7 @@ df2.head()
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="e9e9c8c7-8904-45d1-be3a-e8ff188656b8"/>
 # MAGIC 
 # MAGIC **`Monitor`** クラスを定義しています。このクラスを利用して、以下の質問に回答してください。
 
@@ -189,7 +189,7 @@ class Monitor():
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="b181cd42-1406-4bf8-8dc6-77a9e9f60cdd"/>
 # MAGIC 
 # MAGIC ドリフトを特定するために、2つの時間枠のアイスクリームのデータを基に、 **`Monitor`** オブジェクトを作成します。
 
@@ -206,7 +206,7 @@ drift_monitor = Monitor(
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="24755f69-2a0e-45ba-a1f3-b45871e25dbb"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -221,7 +221,7 @@ drift_monitor = Monitor(
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="52effbfd-a185-4d1e-a711-fe5997db94ed"/>
 # MAGIC 
 # MAGIC 
 # MAGIC **`drift_monitor`** クラスを使用して変化をパーセント形式で出します。何か印象に残ることはありますか？
@@ -232,7 +232,7 @@ drift_monitor = Monitor(
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="ee2a0b06-5a3f-4e1c-b255-3a2f59db70d5"/>
 # MAGIC 
 # MAGIC Investigate why `temperature` has such a big percent change! If you compare `df1.describe()` and `df2.describe()`, what differences do you see? `df1` uses Fahrenheit whereas `df2` uses Celsius! In this case, it was relatively easy to find out the root cause of the drift; however, in real use cases, it might be much harder! 
 # MAGIC 
@@ -240,7 +240,7 @@ drift_monitor = Monitor(
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="29aaae05-cbd2-4515-b483-3b7224bf6187"/>
 # MAGIC 
 # MAGIC 
 # MAGIC ### 統計検定 (Statistical Tests)
@@ -257,7 +257,7 @@ drift_monitor = Monitor(
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="063891c2-6b81-47ec-8a01-76511bb52349"/>
 # MAGIC 
 # MAGIC 
 # MAGIC ### 精査 (Closer Look)

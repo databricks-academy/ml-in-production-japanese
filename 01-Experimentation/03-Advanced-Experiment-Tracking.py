@@ -7,7 +7,7 @@
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="4b6ee6d2-5ae5-4a95-bd96-ce6f3a1022ab"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -24,7 +24,7 @@
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="b9f1a52f-9e49-4efa-9d7c-23e6f524f079"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -53,7 +53,7 @@
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="f3575bef-8818-418a-a47b-d010dda8ff33"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -69,7 +69,7 @@ X_train, X_test, y_train, y_test = train_test_split(df.drop(["price"], axis=1), 
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="4f202196-a36e-4ea0-83f0-d173452281c5"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -95,7 +95,7 @@ with mlflow.start_run(run_name="Signature Example") as run:
 
 # COMMAND ----------
 
-# MAGIC %md-sandbox
+# MAGIC %md-sandbox <i18n value="e9353a0e-59d4-4913-93f6-20ddb1a3bbcb"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -105,7 +105,7 @@ with mlflow.start_run(run_name="Signature Example") as run:
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="5b4669a8-168a-43e5-be30-ec45e83c75f8"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -130,7 +130,7 @@ with mlflow.start_run(run_name="Nested Example") as run:
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="1357e920-239c-4e96-8163-af4b95b6e7cc"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -138,7 +138,7 @@ with mlflow.start_run(run_name="Nested Example") as run:
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="a6f66d2b-3b27-408a-beb7-71e107fd31a6"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -168,7 +168,7 @@ rf_model = rf.fit(X_train, y_train)
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="c0771669-fd4f-4158-a710-48b2c41ed88c"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -176,7 +176,7 @@ rf_model = rf.fit(X_train, y_train)
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="aa9b9ec6-9df3-4c2d-8b0b-6b08d3bea7b0"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -197,7 +197,7 @@ rf_model = rf.fit(X_train, y_train)
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="58aed944-4244-45b5-b982-4a113c325ae7"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -226,7 +226,7 @@ def objective(params):
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="7a7dcc3d-3def-43a8-9042-afe826d8804a"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -256,7 +256,7 @@ with mlflow.start_run(run_name="Hyperopt"):
 
 # COMMAND ----------
 
-# MAGIC %md-sandbox
+# MAGIC %md-sandbox <i18n value="9a09a629-3545-4f60-942e-7a0468c9b54d"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -274,7 +274,7 @@ with mlflow.start_run(run_name="Hyperopt"):
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="662b39d5-4255-4d8a-9930-024a9a79eccd"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -306,7 +306,7 @@ with mlflow.start_run(run_name="Feature Importance Scores"):
 
 # COMMAND ----------
 
-# MAGIC %md-sandbox
+# MAGIC %md-sandbox <i18n value="e112af2e-b3ea-4855-ae09-91aad0db27c0"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -316,7 +316,7 @@ with mlflow.start_run(run_name="Feature Importance Scores"):
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="4eec3fff-d56d-40cf-85b9-6c82297de99d"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 

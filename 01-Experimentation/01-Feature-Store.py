@@ -7,7 +7,7 @@
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="eb86cd87-1efb-41e7-ab51-42e2519a7f7f"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -21,7 +21,7 @@
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="cdce9fac-cdce-4ab5-8fa3-2797972d57b6"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -42,7 +42,7 @@
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="7f8a9e4b-a821-46cb-9fcd-fc58572769ce"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -56,7 +56,7 @@
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="a1ba0678-b162-4513-a3af-675a169df7a6"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -71,7 +71,7 @@ display(airbnb_df)
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="3167a48a-b7d4-42cf-9197-1c6cd66c87bf"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -87,7 +87,7 @@ display(airbnb_df)
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="2d9d25d2-df88-44a8-93eb-cfebfd8ca022"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -103,7 +103,7 @@ display(delta_df)
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="7ac1e0ec-785e-48f1-94f0-86b217432e69"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -118,7 +118,7 @@ display(delta_df)
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="1fe2a536-7fc8-49aa-a7b2-e8322d81a86f"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -133,7 +133,7 @@ display(delta_df)
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="62f4bb05-4074-49e0-ac00-661940133a35"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -149,7 +149,7 @@ display(delta_df)
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="33bda953-e688-4729-a476-a3d46a2662a2"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -168,7 +168,7 @@ display(spark.read
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="82162788-2808-450a-95da-7b1387270814"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -184,7 +184,7 @@ display(spark.read
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="b34fd627-6426-42c7-b0d9-82e46fcd183e"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -197,7 +197,7 @@ display(spark.read
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="ff976181-9c5e-4a87-8a2f-af9886791192"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -216,7 +216,7 @@ print(f"Table: {table_name}")
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="bf78552e-18c0-4eda-8dcf-ed76bf38c998"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -232,7 +232,7 @@ help(fs.create_table)
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="52d53b6d-b1c0-4f8e-bb0c-72df4ad7b71f"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -260,7 +260,7 @@ fs.create_table(
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="b5d563a7-36e5-4757-a54c-d622b4198ebc"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -285,7 +285,7 @@ fs.create_table(
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="ff05da34-eb42-49e7-9a0e-8a6a03a37b7a"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -296,7 +296,7 @@ fs.create_table(
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="de8630f3-d645-42c7-b966-6c2420854d46"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -310,7 +310,7 @@ fs.create_table(
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="744b350a-8786-4f6d-8997-fa9e967a0c2e"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -323,7 +323,7 @@ print(f"Feature table data source : {fs.get_table(table_name).path_data_sources}
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="31c92288-4164-46a0-9763-7491e87eda53"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -345,7 +345,7 @@ display(airbnb_df_short_reviews)
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="80156815-35e5-4f33-a4a1-b3c9d9390a39"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -361,7 +361,7 @@ fs.write_table(name=table_name,
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="61d7f79a-e7a9-4072-a694-587352484c5c"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -373,7 +373,7 @@ fs.write_table(name=table_name,
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="35489dba-e6a9-4bd0-913b-966e4613af3d"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -387,7 +387,7 @@ display(feature_df)
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="032776de-34bf-492c-857b-88caf2e3d34a"/>
 # MAGIC 
 # MAGIC Featureテーブルを削除しましょう。
 # MAGIC 
@@ -405,7 +405,7 @@ display(feature_df)
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="ba7fb23d-7ee0-453a-8bdc-fdf9e6c63dc4"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -417,7 +417,7 @@ display(feature_df)
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="b4480d8a-2aed-43dd-b52a-7e0c758afea4"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -436,7 +436,7 @@ display(feature_df)
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="09538a0b-08b7-4ace-8781-1b6e68bdd789"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -446,7 +446,7 @@ display(feature_df)
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="ec52d384-7d1e-4fc3-a1db-50bb85224502"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 

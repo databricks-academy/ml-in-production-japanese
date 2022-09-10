@@ -7,7 +7,7 @@
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="ea8c78d9-43da-4329-b2c9-7a57bd80efdc"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -25,7 +25,7 @@
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="a1b189b9-fb08-49c7-ac41-c89519fa53e1"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -43,7 +43,7 @@
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="20349097-0c51-48a6-9f8e-a02876444727"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -53,7 +53,7 @@
 
 # COMMAND ----------
 
-# MAGIC %md-sandbox
+# MAGIC %md-sandbox <i18n value="a1182bdb-ed1d-474e-981c-d73f3b24861d"/>
 # MAGIC 
 # MAGIC 
 # MAGIC Microsoft Teamsのエンドポイントを設定するには、以下を実行します。<br>
@@ -71,7 +71,7 @@
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="ed606d93-23a4-4e8e-ae6e-2116117bdb5b"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -88,7 +88,7 @@ webhook_ml_production_api_demo = "" # FILL_IN
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="e63a9a68-fed8-475f-a44b-32e19139118e"/>
 # MAGIC 
 # MAGIC 
 # MAGIC テストメッセージを送信し、Slackで確認します。
@@ -115,7 +115,7 @@ post_api_endpoint("This is my post from Python", webhook_ml_production_api_demo)
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="ab770d35-14e0-4616-8b3f-7e19a96b74f3"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -125,7 +125,7 @@ post_api_endpoint("This is my post from Python", webhook_ml_production_api_demo)
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="bc62e534-5ae5-4e48-b15b-7c41e3472c38"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 

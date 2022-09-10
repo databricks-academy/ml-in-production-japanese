@@ -7,7 +7,7 @@
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="11677a04-117e-48ac-82d0-fe478df33360"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -24,7 +24,7 @@
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="438a1fd4-30c3-4362-92e0-df5e77f3060d"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -58,7 +58,7 @@
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="4b7fc32c-42d4-430b-8312-93e67efdfeb5"/>
 # MAGIC 
 # MAGIC それぞれの状況に応じて異なる対処が必要があり、ドリフトが生じたからと言って直ちに現在のモデルを更新する必要はないことに注意してください。
 # MAGIC 
@@ -73,7 +73,7 @@
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="eb4e7ab9-9d0c-4d59-9eaa-2db2da05b5a9"/>
 # MAGIC 
 # MAGIC ドリフト監視の本質は、**データの時間窓（Time Windows)に対して統計検定を実行すること**です。これにより、ドリフトを検出し、特定の根本原因にたどり着くことができます。ここにいくつかの解決策を説明します。
 # MAGIC 
@@ -117,7 +117,7 @@
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="232b2c47-e056-4adf-8f74-9515e3fc164e"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -236,7 +236,7 @@ def calculate_js_distance(p, q, raw_distribution_1, raw_distribution_2, threshol
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="f3740dad-ea94-4fcc-9577-7ac36398b1ee"/>
 # MAGIC 
 # MAGIC サンプルサイズ　50　で始めてみましょう。
 
@@ -249,7 +249,7 @@ calculate_ks(
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="8d7321cf-8bc9-48ab-be02-6e78ac8276a5"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 分布がかなり似ていて、p値が高いことがわかります。では、サンプルサイズを増やしてp値への影響を見てみましょう。 **`N = 10,000`** に設定します。
@@ -263,7 +263,7 @@ calculate_ks(
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="4971d477-a582-46f0-8d3a-a3416d52e118"/>
 # MAGIC 
 # MAGIC サンプルサイズを大きくすると、p値が大幅に下がりました。サンプルサイズをさらに10倍にしましょう: **`N = 100,000`** 
 
@@ -276,14 +276,14 @@ calculate_ks(
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="8f4ca19a-53ed-40ea-ad4a-3bb9e0ca7ee8"/>
 # MAGIC 
 # MAGIC 
 # MAGIC サンプルサイズが大きくなると、 **`P_value`** はゼロ近くまで低下し、2つのサンプルが有意に異なることを示しています。しかし、2つの分布のプロットを視覚的に見るだけでは、かなり似ています。KSの検定では、2つの分布の類似性を判断するのに役立ちますが、サンプルサイズに制限に直面することになります。では、サンプルサイズが*大きい*場合、分布の類似性をどのように検定できるでしょうか？
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="e58287d8-9bf3-43cd-a686-20ec4e497da4"/>
 # MAGIC 
 # MAGIC ## Jensen Shannon
 # MAGIC 
@@ -304,7 +304,7 @@ calculate_ks(
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="f68d1cd1-a4da-4400-a52b-92360baf4f42"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 同一の分布を持つ場合、JS統計量が0になることを検証します。ここでの **`p`** と **`q`** 引数は確率ベクトルであり、生の値ではないことに注意してください。
@@ -315,7 +315,7 @@ distance.jensenshannon(p=[1.0, 0.0, 1.0], q=[1.0, 0.0, 1.0], base=2.0)
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="8cae5f7f-adf6-43d6-bfb4-7a50b45dfce0"/>
 # MAGIC 
 # MAGIC 
 # MAGIC この例をもう一度 **`N=1,000`** で試してみよう。
@@ -331,7 +331,7 @@ calculate_js_distance(p, q, raw_distribution_1, raw_distribution_2, threshold=0.
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="20eb1618-d5ff-4bd7-b772-6d342497326f"/>
 # MAGIC 
 # MAGIC そして、 **`N = 10,000`** 
 
@@ -346,7 +346,7 @@ calculate_js_distance(p, q, raw_distribution_1, raw_distribution_2, threshold=0.
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="4858cfcd-903e-4839-9eba-313a923e1a16"/>
 # MAGIC 
 # MAGIC 最後に、 **`N = 100,000`** 
 
@@ -361,14 +361,14 @@ calculate_js_distance(p, q, raw_distribution_1, raw_distribution_2, threshold=0.
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="db1e429a-8590-4658-b234-13aea4800a81"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 上に示したように、JS距離は平滑化および正規化されているため、サンプルサイズの増加に対してはるかに強い耐性があります。
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="c76599da-4b09-4e6f-8826-557347429af8"/>
 # MAGIC 
 # MAGIC 実際には、ある一定期間のデータを取得し、それを時間に基づいてグループ（例：週単位など）に分割します。2つのグループに対して検定を実行し、統計的に有意な変化があったかどうかを判断します。これらの監視ジョブの頻度は、トレーニング・ウィンドウ、推論データのサンプルサイズ、およびユースケースによって異なります。これを実際のデータセットでシミュレーションsてみましょう。
 
@@ -390,7 +390,7 @@ pdf2 = airbnb_pdf.drop(pdf1.index)
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="e9d3aad2-2af9-4deb-84a9-a393211eaf2b"/>
 # MAGIC 
 # MAGIC ドリフトをシミュレートするには、 **`pdf2`** を変更します。次の現実的な変更を加えてみてください。
 # MAGIC 
@@ -409,7 +409,7 @@ pdf2["neighbourhood_cleansed"] = pdf2["neighbourhood_cleansed"].map(lambda x: No
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="75862f88-d5f4-4809-9bb6-c12e22755360"/>
 # MAGIC 
 # MAGIC 
 # MAGIC ## 要約統計の適用 (Apply Summary Stats)
@@ -426,7 +426,7 @@ dbutils.data.summarize(pdf2)
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="90a1c03a-c124-43bb-8083-2abf0fd778a9"/>
 # MAGIC 
 # MAGIC 要約プロットからは分布違いの箇所を見つけるのが難しいので、要約統計量の変化率を見える化しましょう。
 
@@ -441,7 +441,7 @@ percent_change.style.background_gradient(cmap=cm, text_color_threshold=0.5, axis
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="2e4a5ada-393f-47cd-a9e6-d2f8cf8e570e"/>
 # MAGIC 
 # MAGIC **`review_scores_rating`** と **`price`** では、多くの統計量が大きく変更しているようなので、それらを調べてみたいと思います。次に、データの2つのサブセットに対してKSテストを実行します。ただし、一連のテストを実行しているため、この状況ではデフォルトのアルファレベル=0.05を使用できません。なぜなら、検定グループで少なくとも1つの偽陽性 (特徴量の分布が変化しなかったのに、変化したと結論付ける)の確率が、グループ内の検定数とともに増加するためです。
 # MAGIC 
@@ -464,7 +464,7 @@ for num in num_cols:
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="37037a08-09a1-41ad-a876-a919c8895b25"/>
 # MAGIC 
 # MAGIC 上記のように、Jensen-Shannon距離はKS距離に比べていくつかの利点があるので、その検定も実行してみましょう。
 # MAGIC 
@@ -488,7 +488,7 @@ for num in num_cols:
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="19ccfb17-b34c-4a70-b01a-11f1e2661507"/>
 # MAGIC 
 # MAGIC それでは、カテゴリ型の特徴量を見てみましょう。まず欠損値の割合を確認します。
 
@@ -503,7 +503,7 @@ pd.concat(
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="4bb159b0-c70f-45ab-a81f-e01ef41d66cd"/>
 # MAGIC 
 # MAGIC **`neighbourhood_cleansed`** にはpdf1にはなかったいくつかの欠損値があります。それでは、この例の **`カイ二乗の分割表検定`** を実行してみましょう。このテストは<a href="https://ja.wikipedia.org/wiki/分割表" target="_blank">分割表</a>を作成し、特定のカテゴリ型特徴量に対して各特徴カテゴリ値の数の列と、 **`pdf1`** と **`pdf2`** の行があります。
 # MAGIC 
@@ -527,13 +527,13 @@ for feature in cat_cols:
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="770b3e78-3388-42be-8559-e7a0c1e345b0"/>
 # MAGIC 
 # MAGIC **注意:** カイ二乗の分割表検定は、欠損値が導入されたためではなく、あるneighbourhoodに欠損値が特別に導入され流ことで不均一な分布につながったためにドリフトを検出しました。欠損値が全体を通して一様であれば、この検定では依存性の変化としてフラグを立てず、低いカウントのままで同様の分布として見ることができます。
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="71d4c070-91ff-4314-986a-d9c799ca221f"/>
 # MAGIC 
 # MAGIC 
 # MAGIC カイ二乗検定に関する追加の説明です。
@@ -552,7 +552,7 @@ for feature in cat_cols:
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="d5a348a1-e123-4560-b1e3-09b29b9d4e28"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -679,7 +679,7 @@ drift_monitor.generate_null_counts()
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="7dd9c6a3-8b89-46f4-a041-790fe2895ffc"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
@@ -706,7 +706,7 @@ drift_monitor.generate_null_counts()
 
 # COMMAND ----------
 
-# MAGIC %md-sandbox
+# MAGIC %md-sandbox <i18n value="fecb11d3-918a-4449-8c94-1319dc74bc7f"/>
 # MAGIC 
 # MAGIC このレッスンでは、ドリフトを特定するための統計的手法に焦点を当てました。
 # MAGIC 
@@ -743,7 +743,7 @@ drift_monitor.generate_null_counts()
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="c5f29222-00d9-4b74-8842-aef5264dbdec"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 詳細については、Chengyin EngとNiall Turbittによる講演をご参考ください：<a href="https://databricks.com/session_na21/drifting-away-testing-ml-models-in-production" target="_blank">Drifting Away:Testing ML Models in Production</a>。
@@ -756,7 +756,7 @@ drift_monitor.generate_null_counts()
 
 # COMMAND ----------
 
-# MAGIC %md
+# MAGIC %md <i18n value="1074438b-a67b-401d-972d-06e70542c967"/>
 # MAGIC 
 # MAGIC 
 # MAGIC 
