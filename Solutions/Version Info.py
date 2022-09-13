@@ -12,8 +12,8 @@
 # MAGIC # Project Information
 # MAGIC 
 # MAGIC * 名前: **Machine Learning in Production**
-# MAGIC * バージョン:  **3.4.0**
-# MAGIC * 日付: **Aug 19, 2022 at 19:37:05 UTC**
+# MAGIC * バージョン:  **3.4.3-JA**
+# MAGIC * 日付: **Sep 13, 2022 at 19:55:51 UTC**
 
 # COMMAND ----------
 
